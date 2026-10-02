@@ -28,40 +28,97 @@
 
       <article class="card">
         <h3>Agentic Self-Evolving Solution for Aquatic Microplastics Toxicology Screening</h3>
+        <div class="project-block">
+          <p class="label">Problem</p>
+          <p>
+            Screening scientific literature on aquatic microplastics toxicity is time-consuming and difficult to scale because
+            relevant studies must be distinguished from large volumes of partially relevant or irrelevant papers, and classification
+            errors can persist when reasoning strategies remain fixed.
+          </p>
+        </div>
+        <div class="project-block">
+          <p class="label">Proposed Solution</p>
+          <p>
+            Develop a multi-stage agentic literature-screening system that classifies studies by microplastics exposure type and uses
+            an automated feedback loop to analyze its own errors and evolve improved reasoning strategies over successive generations.
+            The system also benchmarks multiple LLMs and an embedding-based approach to balance classification accuracy, inference speed,
+            and cost.
+          </p>
+        </div>
         <p>
-          Built a multi-stage agentic literature-screening pipeline that reached 88.2% classification accuracy;
-          added automated error feedback and reasoning-strategy evolution, and benchmarked 8 LLMs plus 1 embedding
-          approach on accuracy, speed, and cost.
+          <strong>Result:</strong> Reached 88.2% classification accuracy and benchmarked 8 LLMs plus 1 embedding approach on accuracy,
+          speed, and inference cost.
         </p>
         <a href="https://github.com/ScottCoffin/ToMEx_3.0" target="_blank" rel="noreferrer">View project on GitHub →</a>
       </article>
 
       <article class="card">
         <h3>FHIR-SetupBench — Verifiable FHIR Environment Construction</h3>
-        <p>
-          Developed an AI-agent benchmark with machine-verifiable checks for process execution, port reachability,
-          FHIR metadata, resource completeness, and clinical smoke tests, enabling objective evaluation of whether
-          agents actually construct functioning FHIR R4 environments.
-        </p>
+        <div class="project-block">
+          <p class="label">Problem</p>
+          <p>
+            Existing FHIR-focused AI benchmarks primarily evaluate agent capabilities within already configured FHIR environments.
+            They therefore overlook an important prerequisite capability: whether an AI agent can independently construct, configure,
+            and validate a usable FHIR environment from an unprepared starting state.
+          </p>
+        </div>
+        <div class="project-block">
+          <p class="label">Proposed Solution</p>
+          <p>
+            Develop FHIR-SetupBench, a benchmark specifically designed to evaluate AI agents on baseline FHIR environment construction.
+            The benchmark presents agents with different initial infrastructure states and evaluates whether they can install, configure,
+            launch, and validate a functioning FHIR R4 environment. Machine-verifiable checks assess process execution, port reachability,
+            FHIR metadata, resource completeness, and clinical smoke tests to determine successful environment readiness.
+          </p>
+        </div>
         <a href="https://github.com/Bstrato/FHIR-SetupBench" target="_blank" rel="noreferrer">View project on GitHub →</a>
       </article>
 
       <article class="card">
         <h3>AgNP Closed-Loop AI Agent — Chemistry Experiment Automation</h3>
-        <p>
-          Designed a human-in-the-loop agentic workflow connecting Hamilton pump control, UV-Vis measurements,
-          cloud synchronization, validation rules, and LLM recommendations; extracted experimental features and
-          enforced hardware-aware constraints and approval checkpoints before physical actions.
-        </p>
+        <div class="project-block">
+          <p class="label">Problem</p>
+          <p>
+            Nanoparticle synthesis experiments require repeated interpretation of experimental measurements and adjustment of reaction
+            conditions, while laboratory hardware, analytical instruments, cloud data, and AI reasoning typically operate as disconnected
+            components. Fully autonomous control also introduces safety and reliability concerns when AI recommendations can directly affect
+            physical experiments.
+          </p>
+        </div>
+        <div class="project-block">
+          <p class="label">Proposed Solution</p>
+          <p>
+            Develop a human-in-the-loop closed-loop AI agent that connects reagent pump control, UV-Vis spectroscopy, experimental-data
+            processing, cloud synchronization, and LLM-based recommendations into one coordinated workflow. The system extracts experimental
+            features such as peak wavelength, absorbance, FWHM, and peak count, applies hardware-aware constraints, and requires human approval
+            before critical physical actions are executed.
+          </p>
+        </div>
         <a href="https://github.com/Bstrato/agnp_agent" target="_blank" rel="noreferrer">View project on GitHub →</a>
       </article>
 
       <article class="card">
-        <h3>SandboxGen — Multi-Agent Sandbox Synthesis & Evaluation</h3>
+        <h3>SandboxGen — Multi-Agent Sandbox Synthesis and Malware Analysis</h3>
+        <div class="project-block">
+          <p class="label">Problem</p>
+          <p>
+            Dynamic malware analysis depends on correctly configuring an execution environment for each sample, including operating system,
+            software, architecture, execution parameters, and sandbox settings. These decisions traditionally require expert manual effort,
+            and AI agents can fail at different stages even when their initial static reasoning appears correct.
+          </p>
+        </div>
+        <div class="project-block">
+          <p class="label">Proposed Solution</p>
+          <p>
+            Develop a multi-agent framework in which specialized Scout, Architect, Executor, and Analyst agents collaborate across the
+            malware-analysis lifecycle. The agents acquire and inspect samples, infer execution requirements, configure CAPEv2 sandbox
+            environments, execute and monitor malware, analyze behavioral evidence, localize failures, and adapt using previous execution
+            outcomes to support recovery and more reliable long-horizon operation.
+          </p>
+        </div>
         <p>
-          Contributed to a multi-agent framework coordinating specialized Scout, Architect, Executor, and Analyst
-          agents for tool-grounded planning, environment interaction, execution monitoring, failure localization,
-          autonomous recovery, and malware-analysis evidence synthesis.
+          <strong>Evaluation:</strong> Stage-by-stage evaluation across 131 real-world malware samples localizes failures in evidence
+          acquisition, planning, tool-grounded execution, behavioral interpretation, and recovery.
         </p>
       </article>
     </section>
